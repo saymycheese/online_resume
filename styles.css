@@ -1,0 +1,269 @@
+@font-face {
+	font-family: 'Circular Std';
+	src: url('circular-std-medium-500.ttf') format('truetype');
+    font-family: 'Hoefler Text';
+	src: url('Hoefler-Text.ttf') format('truetype');
+
+ }
+ 
+ body{
+    background-color: #FFD770;
+    height: 100vh;
+}
+
+#container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#header {
+    text-align: center;
+    margin: 0;
+}
+
+h1{
+    font-family: 'Hoefler Text';
+    font-size: 8vw;
+    font-weight: lighter;
+}
+
+h2{
+    font-family: 'Circular Std';
+    font-size: 3.5vw;
+    margin-top:-80px;
+}
+
+
+.circle{
+    background-color:white;
+    border-radius: 50%;
+}
+
+
+
+.circle-1{
+    position: relative;
+    margin-top: -109vh;
+    margin-left: 27vw;
+}
+
+#circle-1{
+    height: 300px;
+    width: 300px;
+}
+
+#hover-circle-1{
+    position: absolute;
+    left: 15px;
+    top: 7px;
+    display: none;
+}
+
+.circle-1:hover #hover-circle-1{
+    display: block;
+}
+
+.circle-2{
+    position: relative;
+    margin-top: -36vh;
+    margin-left: 70vw;
+}
+
+#circle-2{
+    height: 250px;
+    width: 250px;
+}
+
+#hover-circle-2{
+    position: absolute;
+    left: 15px;
+    top: 7px;
+    display: none;
+}
+
+.circle-2:hover #hover-circle-2{
+    display: block;
+}
+
+.circle-3{
+    position: relative;
+    margin-top: 30vh;
+    margin-left: 5vw;
+}
+
+#circle-3{
+    height: 330px;
+    width: 330px;
+}
+
+#hover-circle-3{
+    position: absolute;
+    left: 8px;
+    top: 7px;
+    display: none;
+}
+
+.circle-3:hover #hover-circle-3{
+    display: block;
+}
+
+.circle-4{
+    position: relative;
+    margin-top: -8vh;
+    margin-left: 64vw;
+}
+
+#circle-4{
+    height: 150px;
+    width: 150px;
+}
+
+#hover-circle-4{
+    position: absolute;
+    left: 3px;
+    top: 2px;
+    display: none;
+}
+
+.circle-4:hover #hover-circle-4{
+    display: block;
+}
+
+@media (max-width: 600px) {
+    h1{
+        font-family: 'Hoefler Text';
+        font-size: 13vw;
+        font-weight: lighter;
+    }
+    
+    h2{
+        font-family: 'Circular Std';
+        font-size: 5vw;
+        margin-top: -30px;
+    }
+    
+    
+    .circle{
+        background-color:white;
+        border-radius: 50%;
+    }
+    .circle-1{
+        position: relative;
+        margin-top: -99vh;
+        margin-left: -17vw;
+    }
+    
+    #circle-1{
+        height: 180px;
+        width: 180px;
+    }
+    
+    #hover-circle-1{
+        position: absolute;
+        left: -52px;
+        top: -50px;
+        transform: scale(63%) rotate(264deg);
+        display: block;
+    }
+    
+    
+    .circle-2{
+        position: relative;
+        margin-top: -39vh;
+        margin-left: 67vw;
+    }
+    
+    #circle-2{
+        height: 120px;
+        width: 120px;
+    }
+    
+    #hover-circle-2{
+        position: absolute;
+        left: -56px;
+        top: -59px;
+        transform: scale(50%);
+        display: block;
+    }
+
+    
+    .circle-3{
+        position: relative;
+        margin-top: 66vh;
+        margin-left: 43vw;
+    }
+    
+    #circle-3{
+        height: 200px;
+        width: 200px;
+    }
+    
+    #hover-circle-3{
+        position: absolute;
+        left: -61px;
+        top: -56px;
+        transform: scale(60%) rotate(11deg);
+        display: block;
+    }
+    
+    
+    .circle-4{
+        position: relative;
+        margin-top: -52vh;
+        margin-left: -11vw;
+    }
+    
+    #circle-4{
+        height: 90px;
+        width: 90px;
+    }
+    
+    #hover-circle-4{
+        position: absolute;
+        left: -19px;
+        top: -33px;
+        transform: scale(50%) rotate(16deg);
+        display: block;
+    }
+
+    @keyframes blink {
+        0% {
+            opacity:1;
+        }
+        50% {
+            opacity:0;
+        }
+        100% {
+            opacity:1;
+        }
+    } 
+    
+    .blink{
+        -moz-animation: blink normal 3s infinite ease-in-out; 
+        -webkit-animation: blink normal 3s infinite ease-in-out; 
+        -ms-animation: blink normal 3s infinite ease-in-out; 
+        animation: blink normal 3s infinite ease-in-out; 
+    }
+    
+    @keyframes blink1 {
+        0% {
+            opacity:1;
+        }
+        50% {
+            opacity:0;
+        }
+        100% {
+            opacity:1;
+        }
+    } 
+    
+    .blink1{
+        -moz-animation: blink normal 4s infinite ease-in-out; 
+        -webkit-animation: blink normal 4s infinite ease-in-out;
+        -ms-animation: blink normal 4s infinite ease-in-out; 
+        animation: blink normal 4s infinite ease-in-out; 
+    }
+}
